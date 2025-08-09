@@ -48,8 +48,8 @@ export default function Home() {
                                     </svg>
                                     Invite to Server
                                 </a>
-                                <a href="#features" className="btn btn-secondary">
-                                    Explore Features
+                                <a href="/auth" className="btn btn-secondary">
+                                    Manage Server
                                 </a>
                             </div>
                         </div>

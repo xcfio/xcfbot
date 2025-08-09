@@ -1,0 +1,315 @@
+/* app/auth/auth.module.css */
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-bg);
+    padding: 1rem;
+    font-family:
+        "Comfortaa",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-primary);
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.authCard {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    box-shadow:
+        0 20px 40px var(--shadow-medium),
+        0 8px 16px var(--shadow-light);
+    padding: 3rem 2.5rem;
+    width: 100%;
+    max-width: 420px;
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 0.75rem 0;
+    line-height: 1.2;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.authButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.authButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.875rem;
+    padding: 1rem 1.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Comfortaa", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.authButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.authButton:hover::before {
+    left: 100%;
+}
+
+.authButton:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 12px 28px var(--shadow-medium),
+        0 4px 12px var(--shadow-light);
+}
+
+.authButton:active {
+    transform: translateY(-1px);
+}
+
+.discordButton {
+    background: linear-gradient(135deg, #5865f2 0%, #4752c4 100%);
+    border-color: #5865f2;
+}
+
+.discordButton:hover {
+    background: linear-gradient(135deg, #4752c4 0%, #3c47a3 100%);
+    border-color: #4752c4;
+}
+
+.githubButton {
+    background: linear-gradient(135deg, #24292e 0%, #1a1e22 100%);
+    border-color: #24292e;
+}
+
+.githubButton:hover {
+    background: linear-gradient(135deg, #1a1e22 0%, #0d1117 100%);
+    border-color: #1a1e22;
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+}
+
+.dividerText {
+    background: var(--bg-card);
+    color: var(--text-muted);
+    padding: 0 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: relative;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.toggleSection {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.toggleText {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0 0 0.75rem 0;
+    font-weight: 400;
+}
+
+.toggleButton {
+    background: none;
+    border: none;
+    color: var(--accent-blue);
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: "Comfortaa", sans-serif;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.toggleButton::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.toggleButton:hover {
+    color: var(--accent-blue-hover);
+    background: rgba(var(--bg-primary-rgb), 0.1);
+}
+
+.toggleButton:hover::before {
+    width: 80%;
+}
+
+/* Enhanced responsive design */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem 0.5rem;
+    }
+
+    .authCard {
+        padding: 2rem 1.5rem;
+        border-radius: 16px;
+    }
+
+    .title {
+        font-size: 1.875rem;
+    }
+
+    .authButton {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    .authButtons {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .authCard {
+        padding: 1.5rem 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .title {
+        font-size: 1.625rem;
+    }
+}
+
+/* Loading and disabled states */
+.authButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.authButton:disabled::before {
+    display: none;
+}
+
+/* Enhanced focus states for accessibility */
+.authButton:focus {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+
+.toggleButton:focus {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+    border-radius: 6px;
+}
+
+/* Animation for card entrance */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.authCard {
+    animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Icon hover effects */
+.authButton svg {
+    transition: transform 0.2s ease;
+}
+
+.authButton:hover svg {
+    transform: scale(1.05);
+}
+
+/* Theme-specific enhancements */
+[data-theme="light"] .authCard {
+    box-shadow:
+        0 20px 40px var(--shadow-light),
+        0 8px 16px rgba(var(--bg-primary-rgb), 0.03);
+}
+
+[data-theme="light"] .authButton {
+    border-color: var(--border-color);
+}
+
+[data-theme="light"] .authButton:hover {
+    box-shadow:
+        0 12px 28px var(--shadow-medium),
+        0 4px 12px var(--shadow-light);
+}
