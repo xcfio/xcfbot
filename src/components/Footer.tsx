@@ -73,11 +73,7 @@ export default function Footer() {
                                         </svg>
                                         Support
                                     </a>
-                                    <a
-                                        href="https://softwarexplus.betteruptime.com/"
-                                        target="_blank"
-                                        className="footer-link"
-                                    >
+                                    <a href="https://xcfio.betteruptime.com/" target="_blank" className="footer-link">
                                         <div className="status-dot online"></div>
                                         Bot Status
                                     </a>
@@ -88,7 +84,7 @@ export default function Footer() {
                                 <h4>Connect</h4>
                                 <div className="social-links">
                                     <a
-                                        href="https://github.com/xcfio/xcf-bot"
+                                        href="https://github.com/xcfio/xcfbot"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="social-link"
@@ -202,7 +198,7 @@ export default function Footer() {
 
                     <div className="footer-bottom">
                         <p className="footer-copyright">
-                            © {new Date().getFullYear()} xcf Bot. Made with ❤️ for Discord communities.
+                            © {new Date().getFullYear()} XCF Bot. Made with ❤️ for Discord communities.
                         </p>
                     </div>
                 </div>

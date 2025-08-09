@@ -2,10 +2,10 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-    title: "xcf bot - Multifunctional Discord Bot",
+    title: "XCF Bot - Multifunctional Discord Bot",
     description:
-        "The ultimate Discord bot for server moderation, management, leveling systems, and community engagement. Transform your Discord server with xcf Bot.",
-    keywords: "Discord bot, moderation bot, server management, leveling system, Discord community, xcf bot",
+        "The ultimate Discord bot for server moderation, management, leveling systems, and community engagement. Transform your Discord server with XCF Bot.",
+    keywords: "Discord bot, moderation bot, server management, leveling system, Discord community, XCF bot",
     robots: {
         index: true,
         follow: true,

@@ -59,7 +59,6 @@ export default function Home() {
                                 <div className="bot-avatar">
                                     <span className="bot-name">XCF</span>
                                 </div>
-                                <div className="status-indicator online"></div>
                             </div>
                         </div>
                     </div>
