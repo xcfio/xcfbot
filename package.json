@@ -1,0 +1,36 @@
+{
+    "name": "xcfbot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "commonjs",
+    "author": "xcfio",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xcfio/xcfbot"
+    },
+    "bugs": {
+        "url": "https://github.com/xcfio/xcfbot/issues",
+        "email": "omarfaruksxp@gmail.com"
+    },
+    "scripts": {
+        "dev": "next dev --port=7700",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "test": "tsc --NoEmit"
+    },
+    "dependencies": {
+        "jspdf": "^3.0.1",
+        "lucide-react": "^0.539.0",
+        "next": "15.4.6",
+        "react": "19.1.1",
+        "react-dom": "19.1.1"
+    },
+    "devDependencies": {
+        "@types/node": "^24.1.0",
+        "@types/react": "^19.1.9",
+        "@types/react-dom": "^19.1.7",
+        "typescript": "^5.8.3"
+    }
+}
