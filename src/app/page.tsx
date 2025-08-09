@@ -49,7 +49,7 @@ export default function Home() {
                                     Invite to Server
                                 </a>
                                 <a href="/auth" className="btn btn-secondary">
-                                    Manage Server
+                                    Open Dashboard
                                 </a>
                             </div>
                         </div>
