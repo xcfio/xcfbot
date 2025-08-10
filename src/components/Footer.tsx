@@ -77,12 +77,9 @@ export default function Footer() {
                                         <HelpCircle size={18} />
                                         Support
                                     </a>
-                                    <a href="https://xcfio.betteruptime.com/" target="_blank" className="footer-link status-link">
+                                    <a href="https://xcfio.betteruptime.com/" target="_blank" className="footer-link">
                                         <Clock size={18} />
-                                        <span className="status-indicator">
-                                            <span className="status-dot online"></span>
-                                            <span className="status-text">Operational</span>
-                                        </span>
+                                        Bot Status
                                     </a>
                                 </div>
                             </div>
