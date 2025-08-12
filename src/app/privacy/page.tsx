@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
                         </p>
                         <div className={styles.lastUpdated}>
                             <Calendar size={16} />
-                            <span>Last updated: January 15, 2025</span>
+                            <span>Last updated: 12th August 2025</span>
                         </div>
                     </header>
 
@@ -160,7 +160,7 @@ export default function PrivacyPolicy() {
                                         <strong>Server Data:</strong> Retained while bot is active in the server
                                     </li>
                                     <li>
-                                        <strong>User Leveling Data:</strong> Retained for up to 2 years after last
+                                        <strong>User Leveling Data:</strong> Retained for up to 1 years after last
                                         activity
                                     </li>
                                     <li>
@@ -170,12 +170,11 @@ export default function PrivacyPolicy() {
                                         <strong>Usage Analytics:</strong> Aggregated data retained for 1 year
                                     </li>
                                     <li>
-                                        <strong>Message Content:</strong> Automatically deleted after 24-48 hours
-                                    </li>
+                                        <strong>Message Content:</strong> Automatically deleted after 7 days                                    </li>
                                 </ul>
                                 <p>
                                     When XCF Bot is removed from a server, all associated server data is automatically
-                                    deleted within 30 days.
+                                    deleted within 12 hours.
                                 </p>
                             </div>
                         </section>
@@ -269,24 +268,16 @@ export default function PrivacyPolicy() {
                                     rights, or have concerns about your data, please don't hesitate to contact us.
                                 </p>
                                 <div className={styles.contactLinks}>
+                                    <a href="/support" className={styles.contactLink}>
+                                        Support
+                                    </a>
                                     <a
                                         href="https://discord.gg/CV53ZxmeaE"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className={styles.contactLink}
                                     >
-                                        Discord Support
-                                    </a>
-                                    <a
-                                        href="https://xcf-docs.netlify.app/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={styles.contactLink}
-                                    >
-                                        Documentation
-                                    </a>
-                                    <a href="/terms" className={styles.contactLink}>
-                                        Terms of Service
+                                        Discord Server
                                     </a>
                                 </div>
                             </div>
