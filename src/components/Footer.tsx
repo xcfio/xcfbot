@@ -69,11 +69,11 @@ export default function Footer() {
                                         <Plus size={18} />
                                         Invite Bot
                                     </a>
-                                    <a href="https://xcf-docs.netlify.app/" target="_blank" className="footer-link">
+                                    <a href="https://xcf-bot.netlify.app/" target="_blank" className="footer-link">
                                         <FileText size={18} />
                                         Documentation
                                     </a>
-                                    <a href="https://discord.gg/CV53ZxmeaE" target="_blank" className="footer-link">
+                                    <a href="/support" className="footer-link">
                                         <HelpCircle size={18} />
                                         Support
                                     </a>
