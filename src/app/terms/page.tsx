@@ -15,7 +15,7 @@ export default function TermsOfService() {
                         <p className={styles.subtitle}>Please read these terms carefully before using XCF Bot</p>
                         <div className={styles.lastUpdated}>
                             <Calendar size={16} />
-                            <span>Last updated: January 15, 2025</span>
+                            <span>Last updated: 12th August 2025</span>
                         </div>
                     </header>
 
@@ -173,20 +173,19 @@ export default function TermsOfService() {
                                 </p>
                                 <div className={styles.contactLinks}>
                                     <a
+                                        href="/support"
+                                        rel="noopener noreferrer"
+                                        className={styles.contactLink}
+                                    >
+                                        Spport
+                                    </a>
+                                    <a
                                         href="https://discord.gg/CV53ZxmeaE"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className={styles.contactLink}
                                     >
-                                        Discord Support
-                                    </a>
-                                    <a
-                                        href="https://xcf-docs.netlify.app/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={styles.contactLink}
-                                    >
-                                        Documentation
+                                        Discord Server
                                     </a>
                                 </div>
                             </div>
