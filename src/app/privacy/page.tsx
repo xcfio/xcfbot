@@ -170,7 +170,8 @@ export default function PrivacyPolicy() {
                                         <strong>Usage Analytics:</strong> Aggregated data retained for 1 year
                                     </li>
                                     <li>
-                                        <strong>Message Content:</strong> Automatically deleted after 7 days                                    </li>
+                                        <strong>Message Content:</strong> Automatically deleted after 7 days
+                                    </li>
                                 </ul>
                                 <p>
                                     When XCF Bot is removed from a server, all associated server data is automatically
