@@ -172,12 +172,8 @@ export default function TermsOfService() {
                                     please contact us through our Discord support server or via our official website.
                                 </p>
                                 <div className={styles.contactLinks}>
-                                    <a
-                                        href="/support"
-                                        rel="noopener noreferrer"
-                                        className={styles.contactLink}
-                                    >
-                                        Spport
+                                    <a href="/support" className={styles.contactLink}>
+                                        Support
                                     </a>
                                     <a
                                         href="https://discord.gg/CV53ZxmeaE"
