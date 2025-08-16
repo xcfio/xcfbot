@@ -1,17 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { 
-    Plus, 
-    FileText, 
-    HelpCircle, 
-    Clock, 
-    Github, 
-    MessageCircle, 
-    Sun, 
-    Moon,
-    Shield
-} from "lucide-react"
+import { Plus, FileText, HelpCircle, Clock, Github, MessageCircle, Sun, Moon, Shield } from "lucide-react"
 import "./Footer.css"
 
 export default function Footer() {
@@ -132,11 +122,7 @@ export default function Footer() {
                                     className="theme-toggle-button"
                                     aria-label={`Switch to ${isLight ? "dark" : "light"} theme`}
                                 >
-                                    {isLight ? (
-                                        <Moon size={18} />
-                                    ) : (
-                                        <Sun size={18} />
-                                    )}
+                                    {isLight ? <Moon size={18} /> : <Sun size={18} />}
                                     <span className="theme-text">{isLight ? "Dark Mode" : "Light Mode"}</span>
                                 </button>
                             </div>
