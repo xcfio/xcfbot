@@ -49,47 +49,58 @@ export default function Footer() {
 
                         <div className="footer-links">
                             <div className="footer-section">
-                                <h4>Quick Links</h4>
+                                <h4 className="footer-section-title">Quick Links</h4>
                                 <div className="footer-nav">
                                     <a
                                         href="https://discord.com/oauth2/authorize?client_id=1211535069492154398"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="footer-link"
                                     >
                                         <Plus size={18} />
-                                        Invite Bot
+                                        <span>Invite Bot</span>
                                     </a>
-                                    <a href="https://xcf-bot.netlify.app/" target="_blank" className="footer-link">
+                                    <a
+                                        href="https://xcf-bot.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="footer-link"
+                                    >
                                         <FileText size={18} />
-                                        Documentation
+                                        <span>Documentation</span>
                                     </a>
                                     <a href="/support" className="footer-link">
                                         <HelpCircle size={18} />
-                                        Support
+                                        <span>Support</span>
                                     </a>
-                                    <a href="https://xcfio.cronitorstatus.com" target="_blank" className="footer-link">
+                                    <a
+                                        href="https://xcfio.cronitorstatus.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="footer-link"
+                                    >
                                         <Clock size={18} />
-                                        Bot Status
+                                        <span>Bot Status</span>
                                     </a>
                                 </div>
                             </div>
 
                             <div className="footer-section">
-                                <h4>Legal</h4>
+                                <h4 className="footer-section-title">Legal</h4>
                                 <div className="footer-nav">
                                     <a href="/terms" className="footer-link">
                                         <FileText size={18} />
-                                        Terms of Service
+                                        <span>Terms of Service</span>
                                     </a>
                                     <a href="/privacy" className="footer-link">
                                         <Shield size={18} />
-                                        Privacy Policy
+                                        <span>Privacy Policy</span>
                                     </a>
                                 </div>
                             </div>
 
                             <div className="footer-section">
-                                <h4>Connect</h4>
+                                <h4 className="footer-section-title">Connect</h4>
                                 <div className="social-links">
                                     <a
                                         href="https://github.com/xcfio/xcfbot"
@@ -99,7 +110,7 @@ export default function Footer() {
                                         aria-label="GitHub Repository"
                                     >
                                         <Github size={20} />
-                                        GitHub
+                                        <span>GitHub</span>
                                     </a>
 
                                     <a
@@ -110,13 +121,13 @@ export default function Footer() {
                                         aria-label="Discord Server"
                                     >
                                         <MessageCircle size={20} />
-                                        Discord
+                                        <span>Discord</span>
                                     </a>
                                 </div>
                             </div>
 
                             <div className="footer-section">
-                                <h4>Theme</h4>
+                                <h4 className="footer-section-title">Theme</h4>
                                 <button
                                     onClick={toggleTheme}
                                     className="theme-toggle-button"
