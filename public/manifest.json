@@ -1,0 +1,96 @@
+{
+    "name": "XCF Bot - Multifunctional Discord Bot",
+    "short_name": "XCF Bot",
+    "description": "The ultimate Discord bot for server moderation, management, leveling systems, and community engagement. Transform your Discord server with XCF Bot.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4285f4",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "en",
+    "categories": ["productivity", "utilities"],
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/screenshot-wide.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "XCF Bot Dashboard"
+        },
+        {
+            "src": "/screenshot-narrow.png",
+            "sizes": "640x1136",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "XCF Bot Mobile View"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Dashboard",
+            "short_name": "Dashboard",
+            "description": "Access the bot dashboard",
+            "url": "/dashboard",
+            "icons": [
+                {
+                    "src": "/dashboard-icon.png",
+                    "sizes": "96x96"
+                }
+            ]
+        },
+        {
+            "name": "Commands",
+            "short_name": "Commands",
+            "description": "View available commands",
+            "url": "/commands",
+            "icons": [
+                {
+                    "src": "/commands-icon.png",
+                    "sizes": "96x96"
+                }
+            ]
+        }
+    ],
+    "related_applications": [
+        {
+            "platform": "web",
+            "url": "https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot%20applications.commands",
+            "id": "discord-bot"
+        }
+    ],
+    "prefer_related_applications": false,
+    "edge_side_panel": {
+        "preferred_width": 400
+    }
+}
