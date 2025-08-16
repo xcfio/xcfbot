@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     description:
         "The ultimate Discord bot for server moderation, management, leveling systems, and community engagement. Transform your Discord server with XCF Bot.",
     keywords: "Discord bot, moderation bot, server management, leveling system, Discord community, XCF bot",
+    icons: {
+        icon: "/favicon.svg"
+    },
     robots: {
         index: true,
         follow: true,
