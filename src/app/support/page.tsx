@@ -21,52 +21,7 @@ import { useRouter } from "next/navigation"
 import jwt from "jsonwebtoken"
 import styles from "./support.module.css"
 import Footer from "@/components/Footer"
-
-// Extend Window interface for Turnstile
-declare global {
-    interface Window {
-        turnstile?: {
-            render: (
-                element: string,
-                options: {
-                    sitekey: string
-                    callback: (token: string) => void
-                    "expired-callback": () => void
-                    "error-callback": () => void
-                }
-            ) => string
-            reset: (widgetId: string) => void
-        }
-    }
-}
-
-interface UserData {
-    id: string
-    username: string
-    avatar: string
-    email?: string
-}
-
-interface TicketMessage {
-    id: string
-    content: string
-    timestamp: string
-    isStaff: boolean
-    author: {
-        name: string
-        avatar?: string
-    }
-}
-
-interface Ticket {
-    id: string
-    subject: string
-    category: string
-    status: "open" | "pending" | "resolved" | "closed"
-    createdAt: string
-    updatedAt: string
-    messages: TicketMessage[]
-}
+import { UserData, Ticket, TicketMessage } from "@/types"
 
 export default function SupportPage() {
     const router = useRouter()
@@ -89,6 +44,7 @@ export default function SupportPage() {
     // Mock previous tickets data
     const mockTickets: Ticket[] = [
         {
+            type: "discord",
             id: "TKT-001",
             subject: "Bot not responding to commands",
             category: "technical",
@@ -138,6 +94,7 @@ export default function SupportPage() {
             ]
         },
         {
+            type: "discord",
             id: "TKT-002",
             subject: "Premium subscription not activating",
             category: "billing",
